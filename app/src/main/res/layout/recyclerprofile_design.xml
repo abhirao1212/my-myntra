@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/carddemo"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/profile_recyclerimg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/profile_recyclerimg"
+            android:text="hello there"
+            android:textStyle="bold"
+            android:id="@+id/profile_recyclertext"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center|left"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/profile_recyclertext2"
+            android:layout_below="@+id/profile_recyclertext"
+            android:layout_toRightOf="@+id/profile_recyclerimg"
+            android:padding="1dp"
+            android:textSize="11sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="5dp"
+            android:text="hey hello there"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/profile_recyclertext"
+            android:src="@drawable/arrow_com"
+            android:layout_gravity="center"
+            android:layout_width="17dp"
+            android:layout_height="12dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

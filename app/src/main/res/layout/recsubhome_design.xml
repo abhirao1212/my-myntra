@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    app:cardUseCompatPadding="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:id="@+id/subhome_top_layout"
+        android:orientation="vertical"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_subhome_top"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/holderrec"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:civ_border_color="#4C4A4A"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/txt_subhome_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/profile_image"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="9dp" />
+
+        <!-- <TextView
+             android:id="@+id/sid"
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             android:textSize="0dp"></TextView>-->
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

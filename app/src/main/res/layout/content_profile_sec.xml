@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sec"
+    android:background="#ECEBEB"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ab"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ECEBEB"
+        tools:context=".FragmentProfile">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtpro"
+                    android:text="Shopping for"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="#272742"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/text_profile_sec"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toRightOf="@+id/txtpro"
+                    android:textSize="18dp"
+                    android:textColor="#272742"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <!--  <LinearLayout
+                      android:layout_marginTop="20dp"
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+                      <ImageView
+                          android:src="@drawable/crown"
+                          android:layout_width="20dp"
+                          android:layout_height="20dp"/>
+
+                      <TextView
+                          android:id="@+id/profile_text2"
+                          android:text=" Become an Insider!"
+                          android:textSize="16dp"
+                          android:gravity="center|left"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"/>
+
+                  </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/profile_relative"
+                    android:layout_below="@+id/txtpro"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_fragimg"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_launcher_background"
+                        app:civ_border_color="#F50057"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:id="@+id/profile_fragtext"
+                        android:text="Santosh Pal"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:ems = "5"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#272742"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <!--
+                           <de.hdodenhof.circleimageview.CircleImageView
+                               android:layout_toRightOf="@+id/profile_fragimg"
+                               android:layout_gravity="left"
+                               android:layout_marginLeft="20dp"
+                               android:id="@+id/profile_fragadd"
+                               android:layout_width="70dp"
+                               android:layout_height="70dp"
+                               android:layout_marginBottom="10dp"
+                               android:src="@drawable/pp"
+                               tools:ignore="NotSibling" />
+
+                           <TextView
+                               android:layout_below="@+id/profile_fragadd"
+                               android:layout_toRightOf="@+id/profile_fragtext"
+                               android:text="Add"
+                               android:gravity="center|right"
+                               android:textColor="@color/black"
+                               android:layout_marginLeft="60dp"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"/>-->
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- <androidx.cardview.widget.CardView
+             android:backgroundTint="#ECEBEB"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <LinearLayout
+                 android:padding="10dp"
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                 <Button
+                     android:background="@drawable/button_arrow"
+                     android:text="Basics  >"
+                     android:padding="1dp"
+                     android:textSize="11dp"
+                     android:layout_width="80dp"
+                     android:layout_height="40dp"/>
+
+                 <Button
+                     android:background="@drawable/button_arrow"
+                     android:text="Size Details  >"
+                     android:padding="1dp"
+                     android:textSize="11dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_width="110dp"
+                     android:layout_height="40dp"/>
+
+                 <Button
+                     android:background="@drawable/button_arrow"
+                     android:text="Skin &amp; Hair  >"
+                     android:padding="1dp"
+                     android:textSize="11dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_width="110dp"
+                     android:layout_height="40dp"/>
+
+             </LinearLayout>
+
+         </androidx.cardview.widget.CardView>-->
+
+        <androidx.cardview.widget.CardView
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/profile_fragtext2"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#272742"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/profile_recyclerview"
+                    android:layout_marginTop="10dp"
+                    android:overScrollMode="never"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- <ImageView
+             android:background="#ECEBEB"
+             android:layout_width="match_parent"
+             android:layout_height="20dp"/>-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/profile_rec_mid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:overScrollMode="never"
+                android:id="@+id/profile_rec_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:overScrollMode="never"
+                android:id="@+id/profile_rec_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:background="#ECEBEB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="#ECEBEB"
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <Button
+                    android:id="@+id/logout"
+                    android:text="LOG OUT"
+                    app:backgroundTint="@android:color/transparent"
+                    android:textColor="#EC0505"
+                    android:layout_width="match_parent"
+                    app:strokeColor="@color/red"
+                    app:strokeWidth="1dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:fontFamily="sans-serif"
+                    android:textColor="#706F6F"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:text="APP VERSION 4.2210.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

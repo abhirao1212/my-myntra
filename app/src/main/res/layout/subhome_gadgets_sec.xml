@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_top"
+            app:cardCornerRadius="0dp"
+            android:backgroundTint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rectop_subhome_gad"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/imggif1_subhome_gad"
+                    android:background="@drawable/placeholder"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/imggif2_subhome_gad"
+                    android:background="@drawable/placeholder"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/imggif3_subhome_gad"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/placeholder"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_mid"
+            app:cardCornerRadius="0dp"
+            android:layout_below="@+id/card_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/slider1_subhome_gad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recmid_subhome_gad"
+            android:layout_below="@id/card_mid"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_mid3"
+            app:cardCornerRadius="0dp"
+            android:layout_below="@+id/recmid_subhome_gad"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/ad3_gad"
+                android:src="@drawable/placeholder"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recmid2_subhome_gad"
+            android:layout_below="@id/card_mid3"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/ad4_gad"
+            android:layout_below="@+id/recmid2_subhome_gad"
+            android:src="@drawable/placeholder"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <Button
+            android:id="@+id/btn_subhome"
+            android:layout_margin="15dp"
+            android:text="View More Products"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:backgroundTint="#151B27"
+            android:layout_below="@+id/ad4_gad"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"/>
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_marginTop="-20dp"
+            android:text="━━━━━━━"
+            android:gravity="center"
+            android:layout_below="@+id/btn_subhome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/quote_subhome"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="'In order to be irreplaceable one must always be different.'"
+            android:layout_below="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/author_subhome"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/quote_subhome"
+            android:gravity="center"
+            android:textColor="#8C8484"
+            android:textSize="14dp"
+            android:text="Coco Chanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

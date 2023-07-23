@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9CECECEB"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/img_slider_product2"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp" />
+
+                <TextView
+                    android:id="@+id/text_product2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_slider_product2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_product3"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_slider_product2"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/text_product2"
+                    android:text=""
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/mrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_product3"
+                    android:layout_marginStart="10dp"
+                    android:text="MRP"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/rupee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_product3"
+                    android:layout_marginStart="4dp"
+                    android:layout_toRightOf="@+id/mrp"
+                    android:text="₹"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/cutprice_product2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_product3"
+                    android:layout_marginStart="2dp"
+                    android:layout_toRightOf="@+id/rupee"
+                    android:background="@drawable/strike_through"
+                    android:text=""
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/rupee2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_product3"
+                    android:layout_marginStart="4dp"
+                    android:layout_toRightOf="@+id/cutprice_product2"
+                    android:text="₹"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price_product2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_product3"
+                    android:layout_marginStart="2dp"
+                    android:layout_toRightOf="@+id/rupee2"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/asterik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_product3"
+                    android:layout_marginTop="-2dp"
+                    android:layout_toRightOf="@+id/price_product2"
+                    android:text="*"
+                    android:textColor="#0DB161" />
+
+                <TextView
+                    android:id="@+id/offer_product2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_product3"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/asterik"
+                    android:background="@drawable/textbg"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bannertxt_product2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/offer_product2"
+                    android:layout_marginStart="10dp"
+                    android:text=""
+                    android:textColor="#13AE62"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:id="@+id/bank_product2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="left"
+                    android:text="Bank offers"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/bankad_product2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left"
+                    android:text="Up To Rs 500 Cashback on CRED pay transactions. - Min Spend Rs 1,000.Available only on Android Devices."
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bank_product2" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/bankad_product2"
+                    android:layout_marginTop="10dp"
+                    android:background="#878585"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bankad_product2" />
+
+                <TextView
+                    android:id="@+id/emi_product2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="EMI option available"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.029"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+                <TextView
+                    android:id="@+id/view_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_below="@+id/divider"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="right"
+                    android:text="View Plan"
+                    android:textColor="#F50057"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/emi_product2"
+                    app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+                <TextView
+                    android:id="@+id/emiad_product2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="left"
+                    android:text="EMI starting from ₹22/month"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_product" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="Size:"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/size_product2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/size_product2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="M"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/s"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/sizechart_product2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="right"
+                    android:text="Size Chart"
+                    android:textColor="#F50057"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/measure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="Garment Measurement:"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toStartOf="@+id/measure_product2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/s" />
+
+                <TextView
+                    android:id="@+id/measure_product2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/measure"
+                    android:text="Chest 39.0in"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@+id/measure"
+                    app:layout_constraintTop_toBottomOf="@+id/size_product2" />
+
+                <RadioGroup
+                    android:id="@+id/radiogrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/measure">
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_selector"
+                        android:button="@android:color/transparent"
+                        android:elevation="2dp"
+                        android:gravity="center"
+                        android:text="S"
+                        android:textColor="@drawable/radio_txt" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@android:color/transparent"
+                        android:elevation="2dp"
+                        android:gravity="center"
+                        android:text="M"
+                        android:textColor="@drawable/radio_txt" />
+
+                    <RadioButton
+                        android:id="@+id/radio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@android:color/transparent"
+                        android:elevation="2dp"
+                        android:gravity="center"
+                        android:text="L"
+                        android:textColor="@drawable/radio_txt" />
+
+                    <RadioButton
+                        android:id="@+id/radio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@android:color/transparent"
+                        android:elevation="2dp"
+                        android:gravity="center"
+                        android:text="XL"
+                        android:textColor="@drawable/radio_txt" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/rupee_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="₹"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/price_s"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radiogrp" />
+
+                <TextView
+                    android:id="@+id/price_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/rupee_s"
+                    android:gravity="left"
+                    android:text="299"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/rupee_s2"
+                    app:layout_constraintStart_toEndOf="@+id/rupee_s"
+                    app:layout_constraintTop_toBottomOf="@+id/radiogrp" />
+
+                <TextView
+                    android:id="@+id/rupee_s2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/price_s"
+                    android:gravity="left"
+                    android:text="₹"
+                    android:textSize="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/cutprice_s"
+                    app:layout_constraintStart_toEndOf="@+id/price_s"
+                    app:layout_constraintTop_toBottomOf="@+id/radiogrp" />
+
+                <TextView
+                    android:id="@+id/cutprice_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/rupee_s2"
+                    android:background="@drawable/strike_through"
+                    android:gravity="left"
+                    android:text="599"
+                    android:textSize="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/paranthesis1"
+                    app:layout_constraintStart_toEndOf="@+id/rupee_s2"
+                    app:layout_constraintTop_toBottomOf="@+id/radiogrp" />
+
+                <TextView
+                    android:id="@+id/paranthesis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/cutprice_s"
+                    android:gravity="left"
+                    android:text="("
+                    android:textColor="#FF9100"
+                    android:textSize="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/offer_s"
+                    app:layout_constraintStart_toEndOf="@+id/cutprice_s"
+                    app:layout_constraintTop_toBottomOf="@+id/radiogrp" />
+
+                <TextView
+                    android:id="@+id/offer_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/paranthesis1"
+                    android:gravity="left"
+                    android:text="58% OFF"
+                    android:textColor="#FF9100"
+                    android:textSize="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/paranthesis2"
+                    app:layout_constraintStart_toEndOf="@+id/paranthesis1"
+                    app:layout_constraintTop_toBottomOf="@+id/radiogrp" />
+
+                <TextView
+                    android:id="@+id/paranthesis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/offer_s"
+                    android:gravity="left"
+                    android:text=")"
+                    android:textColor="#FF9100"
+                    android:textSize="12dp"
+                    app:layout_constraintStart_toEndOf="@+id/offer_s"
+                    app:layout_constraintTop_toBottomOf="@+id/radiogrp" />
+
+                <TextView
+                    android:id="@+id/date_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="left"
+                    android:text=""
+                    android:textSize="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rupee_s" />
+
+                <Button
+                    android:id="@+id/wishlist_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableLeft="@drawable/heartbtn"
+                    android:gravity="left"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:text="WISHLIST"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/cart_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/date_s" />
+
+                <Button
+                    android:id="@+id/cart_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="#F50057"
+                    android:drawableLeft="@drawable/bagbtn"
+                    android:gravity="right"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:text="ADD TO BAG"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/wishlist_btn"
+                    app:layout_constraintTop_toBottomOf="@+id/date_s" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Delivery &amp; Services for"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/delivery"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/cardbg_product"
+                    app:cardElevation="10dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/address_product2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:ellipsize="end"
+                            android:ems="9"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                            android:id="@+id/address_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:gravity="right"
+                            android:text="change"
+                            android:textColor="#F50057"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/dimg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/card_delivery"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/delivery_truck_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/dtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_delivery"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@+id/dimg"
+                    android:text="Get it on time"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/dimg2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/dimg"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/payment_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/dtxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dtxt"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@+id/dimg"
+                    android:gravity="center"
+                    android:text="Pay on delivery available"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/dimg3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/dimg2"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="17dp"
+                    android:src="@drawable/exchange_change_svgrepo_com" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dtxt2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toRightOf="@+id/dimg3"
+                    android:text="Easy 14 days return &amp; exchange available"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Fit"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/slim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fit"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Slim Fit"
+                    android:textSize="14dp" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/slim"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#878585" />
+
+                <TextView
+                    android:id="@+id/sustain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="175dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/fit"
+                    android:gravity="right"
+                    android:text="Sustainable"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sustain"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/slim"
+                    android:text="Regular"
+                    android:textSize="14dp" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="190dp"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/regular"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toRightOf="@+id/divider2"
+                    android:background="#878585" />
+
+                <TextView
+                    android:id="@+id/sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:text="Sport"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/training"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sport"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Training or Gym"
+                    android:textSize="14dp" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="180dp"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/training"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#878585" />
+
+                <TextView
+                    android:id="@+id/product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider4"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="right"
+                    android:text="Product Details"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/detail_product2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/product"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Teal green"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_product2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+                    android:text="Size &amp; Fit"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/slimfit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/size"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Slim Fit"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/slimfit"
+                    android:layout_marginStart="10dp"
+                    android:text="The model (height 6') is wearing a size M"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/model"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+                    android:text="Material &amp; Care"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/material"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Material: 100% Super Combed Cotton"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/wash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m"
+                    android:layout_marginStart="10dp"
+                    android:text="Machine Wash"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/orignal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/genuine_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/genuine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orignal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Genuine Product"
+                    android:textColor="#F50057"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="0.5dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/orignal"
+                    android:background="#878585" />
+
+                <ImageView
+                    android:id="@+id/quality"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/divider5"
+                    android:src="@drawable/quality_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/qualitytxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quality"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/divider5"
+                    android:text="Quality Checked"
+                    android:textColor="#F50057"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

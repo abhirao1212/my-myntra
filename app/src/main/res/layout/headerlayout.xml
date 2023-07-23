@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/parent_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/header_bg"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="5dp"
+            android:id="@+id/pro_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_view"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/header_profile" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pro_card"
+            android:padding="1dp"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            android:text="Log In  .  Sign Up"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/header_name"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pro_card"
+            android:padding="1dp"
+            android:textColor="@color/white"
+            android:text="Karan Varma"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <!--<FrameLayout
+        android:id="@+id/container_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

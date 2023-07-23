@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <ImageView
+          android:id="@+id/img_rec_cart"
+          android:scaleType="centerCrop"
+          android:src="@drawable/ic_launcher_background"
+          android:layout_width="150dp"
+          android:layout_height="180dp"/>
+
+       <TextView
+           android:id="@+id/title_cart"
+           android:layout_marginStart="10dp"
+           android:layout_toRightOf="@+id/img_rec_cart"
+           android:textSize="16dp"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:text="Roadster"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/cross_cart"
+            android:layout_marginTop="-2dp"
+            android:src="@drawable/cross_svgrepo_com"
+            android:layout_toRightOf="@+id/title_cart"
+            android:layout_width="35dp"
+            android:layout_height="25dp"/>
+
+        <TextView
+            android:id="@+id/description_cart"
+            android:maxLines="1"
+            android:ems = "8"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/img_rec_cart"
+            android:layout_below="@+id/title_cart"
+            android:textSize="16dp"
+            android:text="Men Brown Melange Henley"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_cart"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/img_rec_cart"
+            android:layout_below="@+id/description_cart"
+            android:backgroundTint="#DDDADA"
+            android:layout_width="80dp"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/qty"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:text="Qty:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/qty_cart"
+                    android:layout_marginStart="4dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:text="1"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/down"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/down_small_svgrepo_com"
+                    android:layout_toRightOf="@+id/qty_cart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_cart2"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/card_cart"
+            android:layout_below="@+id/description_cart"
+            android:backgroundTint="#DDDADA"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/size"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:text="Size:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/cart_size"
+                    android:layout_marginStart="4dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:text="S"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"/>
+
+             <!--   <ImageView
+                    android:id="@+id/down2"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/down_small_svgrepo_com"
+                    android:layout_toRightOf="@+id/qty_cart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>-->
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/rupee_s"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/card_cart"
+            android:layout_toRightOf="@+id/img_rec_cart"
+            android:text="₹"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/price_cart"
+            android:layout_marginStart="2dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="299"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"
+            android:layout_toRightOf="@+id/rupee_s"
+            android:layout_below="@+id/card_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/rupee_s2"
+            android:layout_marginStart="4dp"
+            android:layout_toRightOf="@+id/price_cart"
+            android:layout_below="@+id/card_cart"
+            android:text="₹"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/cutprice_cart"
+            android:layout_marginStart="2dp"
+            android:text="599"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/strike_through"
+            android:textSize="12dp"
+            android:layout_toRightOf="@+id/rupee_s2"
+            android:layout_below="@+id/card_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/offer_cart"
+            android:textColor="#FF9100"
+            android:text="58% OFF"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:textSize="12dp"
+            android:layout_toRightOf="@+id/cutprice_cart"
+            android:layout_below="@+id/card_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/returnp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/previous_return_svgrepo_com"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/img_rec_cart"
+            android:layout_below="@+id/rupee_s"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:id="@+id/day"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="14 Days"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/price_cart"
+            android:layout_toRightOf="@+id/returnp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/available"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:text="return available"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/price_cart"
+            android:layout_toRightOf="@+id/day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/rightcheck"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/check_small_svgrepo_com"
+            android:layout_marginStart="15dp"
+            android:layout_toRightOf="@+id/img_rec_cart"
+            android:layout_below="@+id/returnp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/delivery_cart"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:text="Delivery between"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/available"
+            android:layout_toRightOf="@+id/rightcheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="#AAA8A8"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/img_rec_cart"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

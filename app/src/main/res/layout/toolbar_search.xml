@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            app:navigationIcon="@drawable/back_arraow"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <AutoCompleteTextView
+                android:hint="Search in Fashion"
+                android:background="@color/white"
+                android:layout_width="200dp"
+                android:layout_height="20dp"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/mic_searchpage"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/searchmic"/>
+
+            <ImageView
+                android:id="@+id/camera_searchpage"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/searchcam"
+                android:layout_gravity="right"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</LinearLayout>

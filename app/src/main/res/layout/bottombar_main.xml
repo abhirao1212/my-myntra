@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+       <!--  <FrameLayout
+        android:id="@+id/container_bottom_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bubbleNavigation"/>-->
+
+       <!--  <FrameLayout
+        android:id="@+id/karan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/bubbleNavigation"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"-->
+
+    <FrameLayout
+        android:id="@+id/bottom_container_main"
+        android:layout_above="@+id/bubbleNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/bubbleNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_shape="@drawable/bottom_bg"
+            app:bt_shapeColor="#EFCFDA"
+            app:bt_colorActive="#E91E63"
+            app:bt_colorInactive="#E91E63"
+            app:bt_title="Home"
+            app:bt_icon="@drawable/home"
+            android:layout_weight="1"/>
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_shape="@drawable/bottom_bg"
+            app:bt_shapeColor="#DAE8F3"
+            app:bt_colorActive="#2196F3"
+            app:bt_colorInactive="#2196F3"
+            app:bt_icon="@drawable/bottomcategories"
+            app:bt_title="Category"
+            android:layout_weight="1"/>
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/luxe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_shape="@drawable/bottom_bg"
+            app:bt_shapeColor="#D2ECD3"
+            android:layout_weight="1"
+            app:bt_colorActive="#4CAF50"
+            app:bt_colorInactive="#4CAF50"
+            app:bt_icon="@drawable/bottomdiamond1"
+            app:bt_title="Luxe" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_shape="@drawable/bottom_bg"
+            app:bt_shapeColor="#E6D1EA"
+            android:layout_weight="1"
+            app:bt_colorActive="#9C27B0"
+            app:bt_colorInactive="#9C27B0"
+            app:bt_icon="@drawable/bottomprofile"
+            app:bt_title="Profile" />
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+       <!-- <FrameLayout
+     android:id="@+id/hide_container"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent" />-->
+
+       <!--<FrameLayout
+        android:id="@+id/container_bottom_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="Activities.MainActivity">
+
+        <FrameLayout
+            android:id="@+id/karan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottomappbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottomnavigationbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="16dp"
+                    android:background="@android:color/transparent"
+                    app:menu="@menu/tools_bottombar"/>
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mstudio"
+                app:layout_anchor="@id/bottomappbar" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <FrameLayout
+            android:id="@+id/hide_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>-->
+
+</RelativeLayout>

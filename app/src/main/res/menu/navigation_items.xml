@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/category"
+        android:id="@+id/categories"
+        android:title="Shop by Categories"/>
+
+    <item
+        android:icon="@drawable/box"
+        android:id="@+id/orders"
+        android:title="Orders"/>
+
+    <item
+        android:id="@+id/faq"
+        android:title="FAQs"/>
+
+    <item
+        android:id="@+id/contact"
+        android:title="CONTACT US"/>
+
+    <item
+        android:id="@+id/legal"
+        android:title="LEGAL"/>
+
+</menu>

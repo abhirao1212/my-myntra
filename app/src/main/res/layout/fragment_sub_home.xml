@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SubHomeFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="-8dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            app:titleTextColor="@color/white"
+            android:id="@+id/toolbar"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/bag_subhome"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/cartxy"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/search_subhome"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="right"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/search"/>
+
+            <ImageView
+                android:id="@+id/back_subhome"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="left"
+                android:background="@drawable/backxyz"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_subhome1"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/content_subhomefrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_subhome2"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/subhome_sec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_subhome3"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/subhome_gadgets_sec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
